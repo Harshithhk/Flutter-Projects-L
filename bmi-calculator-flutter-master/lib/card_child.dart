@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-
-const lableTextStyle = TextStyle(
-  fontSize: 18,
-  color: Color(0xFF8D8E98),
-);
+import 'constants.dart';
 
 class cardChild extends StatelessWidget {
   cardChild({@required this.icon, this.lable});
@@ -22,8 +18,8 @@ class cardChild extends StatelessWidget {
           height: 15,
         ),
         Text(
-          'Male',
-          style: lableTextStyle,
+          lable,
+          style: kLableTextStyle,
         )
       ],
     );
